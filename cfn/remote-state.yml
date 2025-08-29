@@ -1,0 +1,46 @@
+# CloudFormation template to create S3 bucket with encryption, versioning and DynamoDB table for locking.
+AWSTemplateFormatVersion: '2010-09-09'
+Description: "Terragrunt remote state resources (S3 bucket + DynamoDB table)"
+Parameters:
+  BucketPrefix:
+    Type: String
+    Description: "Prefix for the S3 bucket (full bucket name will be prefix-Region). Set via CLI when deploying."
+Resources:
+  RemoteStateBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub "${BucketPrefix}-${AWS::Region}"
+      VersioningConfiguration:
+        Status: Enabled
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+    DeletionPolicy: Retain
+  RemoteStateLockTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: terragrunt-locks
+      AttributeDefinitions:
+        - AttributeName: LockID
+          AttributeType: S
+      KeySchema:
+        - AttributeName: LockID
+          KeyType: HASH
+      BillingMode: PAY_PER_REQUEST
+    DeletionPolicy: Retain
+
+Outputs:
+  BucketName:
+    Value: !Sub "${BucketPrefix}-${AWS::Region}"
+    Export:
+      Name: !Sub "TerragruntRemoteStateBucket-${AWS::Region}"
+  DynamoDBTable:
+    Value: "terragrunt-locks"
+    Export:
+      Name: !Sub "TerragruntRemoteStateDDB-${AWS::Region}"
