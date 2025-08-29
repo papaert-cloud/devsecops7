@@ -1,0 +1,68 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Create IAM Group, User, and inline policy (policy list parameterized)
+
+Parameters:
+  UserName:
+    Type: String
+  GroupName:
+    Type: String
+  PolicyName:
+    Type: String
+    Default: s3-readonly-policy
+  TagKey:
+    Type: String
+    Default: Environment
+  TagValue:
+    Type: String
+    Default: NonProd
+  ManagedPolicyArn:                # <-- add this
+    Type: String
+    Default: arn:aws:iam::aws:policy/job-function/ViewOnlyAccess
+    Description: AWS managed (or custom) policy ARN to attach to the group
+
+Resources:
+  MyFirstGroup:
+    Type: AWS::IAM::Group
+    Properties:
+      GroupName: !Ref GroupName
+      ManagedPolicyArns:
+        - !Ref ManagedPolicyArn     # <-- use the parameter
+
+  MyFirstIAMUser:
+    Type: AWS::IAM::User
+    Properties:
+      UserName: !Ref UserName
+      Groups:
+        - !Ref MyFirstGroup +
+      Tags:
+        - Key: !Ref TagKey
+          Value: !Ref TagValue
+
+  MyFirstPolicy:
+    Type: AWS::IAM::Policy
+    Properties:
+      PolicyName: !Ref PolicyName
+      Groups:
+        - !Ref MyFirstGroup
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Sid: ListBuckets
+            Effect: Allow
+            Action:
+              - s3:ListAllMyBuckets
+              - s3:GetBucketLocation
+            Resource: "*"
+          - Sid: ReadObjects
+            Effect: Allow
+            Action:
+              - s3:GetObject
+            Resource: "arn:aws:s3:::*/*"
+
+Outputs:
+  GroupNameOut:
+    Value: !Ref MyFirstGroup
+  UserNameOut:
+    Value: !Ref MyFirstIAMUser
+  PolicyNameOut:
+    Value: !Ref MyFirstPolicy

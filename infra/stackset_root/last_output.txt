@@ -1,0 +1,320 @@
+{
+    "Events": [
+        {
+            "EventId": "df671f45-b379-4082-a701-1f23b25e0779",
+            "EventName": "DeleteStackSet",
+            "ReadOnly": "false",
+            "AccessKeyId": "AKIAQCY4T5QB465NKCE4",
+            "EventTime": "2025-08-27T02:35:22-05:00",
+            "EventSource": "cloudformation.amazonaws.com",
+            "Username": "peter-admin",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.11\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDAQCY4T5QB6M7YI7QP5\",\"arn\":\"arn:aws:iam::005965605891:user/peter-admin\",\"accountId\":\"005965605891\",\"accessKeyId\":\"AKIAQCY4T5QB465NKCE4\",\"userName\":\"peter-admin\"},\"eventTime\":\"2025-08-27T07:35:22Z\",\"eventSource\":\"cloudformation.amazonaws.com\",\"eventName\":\"DeleteStackSet\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"47.234.174.123\",\"userAgent\":\"APN/1.0 HashiCorp/1.0 Terraform/1.6.6 (+https://www.terraform.io) terraform-provider-aws/6.10.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.38.0 ua/2.1 os/linux lang/go#1.24.6 md/GOOS#linux md/GOARCH#amd64 api/cloudformation#1.64.1 m/n\",\"requestParameters\":{\"stackSetName\":\"iam-user-group-stackset-v2\"},\"responseElements\":null,\"requestID\":\"182b2474-9deb-48a9-ab8d-1e25e12bafcd\",\"eventID\":\"df671f45-b379-4082-a701-1f23b25e0779\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"005965605891\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"cloudformation.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "1d3e720a-9439-4d90-8638-1cb6f8673678",
+            "EventName": "DeleteStackSet",
+            "ReadOnly": "false",
+            "AccessKeyId": "AKIAQCY4T5QB465NKCE4",
+            "EventTime": "2025-08-27T02:12:32-05:00",
+            "EventSource": "cloudformation.amazonaws.com",
+            "Username": "peter-admin",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.11\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDAQCY4T5QB6M7YI7QP5\",\"arn\":\"arn:aws:iam::005965605891:user/peter-admin\",\"accountId\":\"005965605891\",\"accessKeyId\":\"AKIAQCY4T5QB465NKCE4\",\"userName\":\"peter-admin\"},\"eventTime\":\"2025-08-27T07:12:32Z\",\"eventSource\":\"cloudformation.amazonaws.com\",\"eventName\":\"DeleteStackSet\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"47.234.174.123\",\"userAgent\":\"aws-cli/2.28.8 md/awscrt#0.27.5 ua/2.1 os/linux#6.6.87.2-microsoft-standard-WSL2 md/arch#x86_64 lang/python#3.13.4 md/pyimpl#CPython m/b,Z,E cfg/retry-mode#standard md/installer#exe md/distrib#ubuntu.24 sid/7b97ffef3071 md/prompt#off md/command#cloudformation.delete-stack-set\",\"requestParameters\":{\"stackSetName\":\"iam-user-group-stackset-v2\"},\"responseElements\":null,\"requestID\":\"bb9278df-63c8-4b0f-bf55-f727da8e92b9\",\"eventID\":\"1d3e720a-9439-4d90-8638-1cb6f8673678\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"005965605891\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"cloudformation.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "e1dd2581-a47c-47ec-b18d-dd224488bce8",
+            "EventName": "DeleteStackSet",
+            "ReadOnly": "false",
+            "AccessKeyId": "ASIAQCY4T5QB77RJC6KZ",
+            "EventTime": "2025-08-27T02:08:46-05:00",
+            "EventSource": "cloudformation.amazonaws.com",
+            "Username": "root",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.11\",\"userIdentity\":{\"type\":\"Root\",\"principalId\":\"005965605891\",\"arn\":\"arn:aws:iam::005965605891:root\",\"accountId\":\"005965605891\",\"accessKeyId\":\"ASIAQCY4T5QB77RJC6KZ\",\"sessionContext\":{\"attributes\":{\"creationDate\":\"2025-08-27T03:56:06Z\",\"mfaAuthenticated\":\"true\"}}},\"eventTime\":\"2025-08-27T07:08:46Z\",\"eventSource\":\"cloudformation.amazonaws.com\",\"eventName\":\"DeleteStackSet\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"47.234.174.123\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\",\"errorCode\":\"StackSetNotEmptyException\",\"errorMessage\":\"StackSet is not empty\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"c11828c9-3e29-4112-bc1c-f46a534b9efb\",\"eventID\":\"e1dd2581-a47c-47ec-b18d-dd224488bce8\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"005965605891\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"cloudformation.us-east-1.amazonaws.com\"},\"sessionCredentialFromConsole\":\"true\"}"
+        },
+        {
+            "EventId": "4e991158-aabe-4c44-8dc5-c74029e8ca4f",
+            "EventName": "DeleteStackSet",
+            "ReadOnly": "false",
+            "AccessKeyId": "AKIAQCY4T5QB465NKCE4",
+            "EventTime": "2025-08-27T02:03:20-05:00",
+            "EventSource": "cloudformation.amazonaws.com",
+            "Username": "peter-admin",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.11\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDAQCY4T5QB6M7YI7QP5\",\"arn\":\"arn:aws:iam::005965605891:user/peter-admin\",\"accountId\":\"005965605891\",\"accessKeyId\":\"AKIAQCY4T5QB465NKCE4\",\"userName\":\"peter-admin\"},\"eventTime\":\"2025-08-27T07:03:20Z\",\"eventSource\":\"cloudformation.amazonaws.com\",\"eventName\":\"DeleteStackSet\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"47.234.174.123\",\"userAgent\":\"aws-cli/2.28.8 md/awscrt#0.27.5 ua/2.1 os/linux#6.6.87.2-microsoft-standard-WSL2 md/arch#x86_64 lang/python#3.13.4 md/pyimpl#CPython m/Z,b,E cfg/retry-mode#standard md/installer#exe md/distrib#ubuntu.24 sid/7b97ffef3071 md/prompt#off md/command#cloudformation.delete-stack-set\",\"errorCode\":\"StackSetNotEmptyException\",\"errorMessage\":\"StackSet is not empty\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"e6379c6a-d051-4ef7-9291-eea91a20c8bc\",\"eventID\":\"4e991158-aabe-4c44-8dc5-c74029e8ca4f\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"005965605891\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"cloudformation.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "4bd01913-c48c-4671-803f-5aca7882a5ba",
+            "EventName": "DeleteStackSet",
+            "ReadOnly": "false",
+            "AccessKeyId": "AKIAQCY4T5QB465NKCE4",
+            "EventTime": "2025-08-27T02:02:46-05:00",
+            "EventSource": "cloudformation.amazonaws.com",
+            "Username": "peter-admin",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.11\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDAQCY4T5QB6M7YI7QP5\",\"arn\":\"arn:aws:iam::005965605891:user/peter-admin\",\"accountId\":\"005965605891\",\"accessKeyId\":\"AKIAQCY4T5QB465NKCE4\",\"userName\":\"peter-admin\"},\"eventTime\":\"2025-08-27T07:02:46Z\",\"eventSource\":\"cloudformation.amazonaws.com\",\"eventName\":\"DeleteStackSet\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"47.234.174.123\",\"userAgent\":\"aws-cli/2.28.8 md/awscrt#0.27.5 ua/2.1 os/linux#6.6.87.2-microsoft-standard-WSL2 md/arch#x86_64 lang/python#3.13.4 md/pyimpl#CPython m/Z,E,b cfg/retry-mode#standard md/installer#exe md/distrib#ubuntu.24 sid/7b97ffef3071 md/prompt#off md/command#cloudformation.delete-stack-set\",\"requestParameters\":{\"stackSetName\":\"iam-user-group-stackset\"},\"responseElements\":null,\"requestID\":\"d94b691c-757a-4896-9fb1-b87baa702b90\",\"eventID\":\"4bd01913-c48c-4671-803f-5aca7882a5ba\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"005965605891\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"cloudformation.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "de087c9b-973e-41cd-abe7-031fdb1d13e0",
+            "EventName": "DeleteStackSet",
+            "ReadOnly": "false",
+            "AccessKeyId": "AKIAQCY4T5QB465NKCE4",
+            "EventTime": "2025-08-27T01:56:28-05:00",
+            "EventSource": "cloudformation.amazonaws.com",
+            "Username": "peter-admin",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.11\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDAQCY4T5QB6M7YI7QP5\",\"arn\":\"arn:aws:iam::005965605891:user/peter-admin\",\"accountId\":\"005965605891\",\"accessKeyId\":\"AKIAQCY4T5QB465NKCE4\",\"userName\":\"peter-admin\"},\"eventTime\":\"2025-08-27T06:56:28Z\",\"eventSource\":\"cloudformation.amazonaws.com\",\"eventName\":\"DeleteStackSet\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"47.234.174.123\",\"userAgent\":\"aws-cli/2.28.8 md/awscrt#0.27.5 ua/2.1 os/linux#6.6.87.2-microsoft-standard-WSL2 md/arch#x86_64 lang/python#3.13.4 md/pyimpl#CPython m/Z,E,b cfg/retry-mode#standard md/installer#exe md/distrib#ubuntu.24 sid/7b97ffef3071 md/prompt#off md/command#cloudformation.delete-stack-set\",\"errorCode\":\"OperationInProgressException\",\"errorMessage\":\"Operation fd4feed7-ab54-4409-a0c0-f4faba1f9b3d on StackSet arn:aws:cloudformation:us-east-1:005965605891:stackset/iam-user-group-stackset:ff1b2cad-06eb-4f7c-bb54-a817fb84c35b is in progress\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"fad918a0-0ffd-47fc-80e2-3cdc5de3b0a9\",\"eventID\":\"de087c9b-973e-41cd-abe7-031fdb1d13e0\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"005965605891\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"cloudformation.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "521b7d1c-4457-4f9b-b4df-fbd308bd19f1",
+            "EventName": "DeleteStackSet",
+            "ReadOnly": "false",
+            "AccessKeyId": "ASIAQCY4T5QB6QTIIA7W",
+            "EventTime": "2025-08-24T08:17:46-05:00",
+            "EventSource": "cloudformation.amazonaws.com",
+            "Username": "root",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.11\",\"userIdentity\":{\"type\":\"Root\",\"principalId\":\"005965605891\",\"arn\":\"arn:aws:iam::005965605891:root\",\"accountId\":\"005965605891\",\"accessKeyId\":\"ASIAQCY4T5QB6QTIIA7W\",\"sessionContext\":{\"attributes\":{\"creationDate\":\"2025-08-24T04:35:06Z\",\"mfaAuthenticated\":\"true\"}}},\"eventTime\":\"2025-08-24T13:17:46Z\",\"eventSource\":\"cloudformation.amazonaws.com\",\"eventName\":\"DeleteStackSet\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"47.234.174.123\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\",\"requestParameters\":{\"stackSetName\":\"org-access-role-remediation:8d5f66c3-8f50-4bb5-82c7-2b8953467d94\"},\"responseElements\":null,\"requestID\":\"3abfbec7-a00f-48e6-ba02-982f9cab5228\",\"eventID\":\"521b7d1c-4457-4f9b-b4df-fbd308bd19f1\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"005965605891\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"cloudformation.us-east-1.amazonaws.com\"},\"sessionCredentialFromConsole\":\"true\"}"
+        },
+        {
+            "EventId": "d625f42c-ec63-4ff3-acb9-bdab73652934",
+            "EventName": "DeleteStackSet",
+            "ReadOnly": "false",
+            "AccessKeyId": "ASIAQCY4T5QB6QTIIA7W",
+            "EventTime": "2025-08-24T08:17:40-05:00",
+            "EventSource": "cloudformation.amazonaws.com",
+            "Username": "root",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.11\",\"userIdentity\":{\"type\":\"Root\",\"principalId\":\"005965605891\",\"arn\":\"arn:aws:iam::005965605891:root\",\"accountId\":\"005965605891\",\"accessKeyId\":\"ASIAQCY4T5QB6QTIIA7W\",\"sessionContext\":{\"attributes\":{\"creationDate\":\"2025-08-24T04:35:06Z\",\"mfaAuthenticated\":\"true\"}}},\"eventTime\":\"2025-08-24T13:17:40Z\",\"eventSource\":\"cloudformation.amazonaws.com\",\"eventName\":\"DeleteStackSet\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"47.234.174.123\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\",\"requestParameters\":{\"stackSetName\":\"s3-bucket-multiaccount:bf8dd8da-ae78-4136-bdbf-152621c79186\"},\"responseElements\":null,\"requestID\":\"b8137e9e-e9fb-40c0-8f20-b9e27fa2c986\",\"eventID\":\"d625f42c-ec63-4ff3-acb9-bdab73652934\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"005965605891\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"cloudformation.us-east-1.amazonaws.com\"},\"sessionCredentialFromConsole\":\"true\"}"
+        }
+    ]
+}
+{
+    "Events": [
+        {
+            "EventId": "420dfe65-2df9-4063-9a83-57984f54804a",
+            "EventName": "DeleteStack",
+            "ReadOnly": "false",
+            "AccessKeyId": "AKIAQCY4T5QB465NKCE4",
+            "EventTime": "2025-08-27T01:19:50-05:00",
+            "EventSource": "cloudformation.amazonaws.com",
+            "Username": "peter-admin",
+            "Resources": [
+                {
+                    "ResourceType": "AWS::CloudFormation::Stack",
+                    "ResourceName": "iam-user-group-mgmt"
+                }
+            ],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.11\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDAQCY4T5QB6M7YI7QP5\",\"arn\":\"arn:aws:iam::005965605891:user/peter-admin\",\"accountId\":\"005965605891\",\"accessKeyId\":\"AKIAQCY4T5QB465NKCE4\",\"userName\":\"peter-admin\"},\"eventTime\":\"2025-08-27T06:19:50Z\",\"eventSource\":\"cloudformation.amazonaws.com\",\"eventName\":\"DeleteStack\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"47.234.174.123\",\"userAgent\":\"aws-cli/2.28.8 md/awscrt#0.27.5 ua/2.1 os/linux#6.6.87.2-microsoft-standard-WSL2 md/arch#x86_64 lang/python#3.13.4 md/pyimpl#CPython m/Z,E,b cfg/retry-mode#standard md/installer#exe md/distrib#ubuntu.24 sid/c74833cef2be md/prompt#off md/command#cloudformation.delete-stack\",\"requestParameters\":{\"stackName\":\"iam-user-group-mgmt\"},\"responseElements\":null,\"requestID\":\"a6ceb278-1289-4666-a310-c9216fc8d916\",\"eventID\":\"420dfe65-2df9-4063-9a83-57984f54804a\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"005965605891\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"cloudformation.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "06ca2624-601b-4967-b390-12ec0f686faf",
+            "EventName": "DeleteStack",
+            "ReadOnly": "false",
+            "AccessKeyId": "AKIAQCY4T5QB465NKCE4",
+            "EventTime": "2025-08-27T00:14:33-05:00",
+            "EventSource": "cloudformation.amazonaws.com",
+            "Username": "peter-admin",
+            "Resources": [
+                {
+                    "ResourceType": "AWS::CloudFormation::Stack",
+                    "ResourceName": "iam-user-group-mgmt"
+                }
+            ],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.11\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDAQCY4T5QB6M7YI7QP5\",\"arn\":\"arn:aws:iam::005965605891:user/peter-admin\",\"accountId\":\"005965605891\",\"accessKeyId\":\"AKIAQCY4T5QB465NKCE4\",\"userName\":\"peter-admin\"},\"eventTime\":\"2025-08-27T05:14:33Z\",\"eventSource\":\"cloudformation.amazonaws.com\",\"eventName\":\"DeleteStack\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"47.234.174.123\",\"userAgent\":\"aws-cli/2.28.8 md/awscrt#0.27.5 ua/2.1 os/linux#6.6.87.2-microsoft-standard-WSL2 md/arch#x86_64 lang/python#3.13.4 md/pyimpl#CPython m/Z,E,b cfg/retry-mode#standard md/installer#exe md/distrib#ubuntu.24 sid/93e30795fbf7 md/prompt#off md/command#cloudformation.delete-stack\",\"requestParameters\":{\"stackName\":\"iam-user-group-mgmt\"},\"responseElements\":null,\"requestID\":\"98151967-db44-43a4-a2fc-1738ee4712cc\",\"eventID\":\"06ca2624-601b-4967-b390-12ec0f686faf\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"005965605891\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"cloudformation.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "7ee706c2-a98c-4d75-bd2c-d4275c102d22",
+            "EventName": "DeleteStack",
+            "ReadOnly": "false",
+            "AccessKeyId": "AKIAQCY4T5QB465NKCE4",
+            "EventTime": "2025-08-27T00:14:26-05:00",
+            "EventSource": "cloudformation.amazonaws.com",
+            "Username": "peter-admin",
+            "Resources": [
+                {
+                    "ResourceType": "AWS::CloudFormation::Stack",
+                    "ResourceName": "iam-user-group-mgmt"
+                }
+            ],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.11\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDAQCY4T5QB6M7YI7QP5\",\"arn\":\"arn:aws:iam::005965605891:user/peter-admin\",\"accountId\":\"005965605891\",\"accessKeyId\":\"AKIAQCY4T5QB465NKCE4\",\"userName\":\"peter-admin\"},\"eventTime\":\"2025-08-27T05:14:26Z\",\"eventSource\":\"cloudformation.amazonaws.com\",\"eventName\":\"DeleteStack\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"47.234.174.123\",\"userAgent\":\"aws-cli/2.28.8 md/awscrt#0.27.5 ua/2.1 os/linux#6.6.87.2-microsoft-standard-WSL2 md/arch#x86_64 lang/python#3.13.4 md/pyimpl#CPython m/b,Z,E cfg/retry-mode#standard md/installer#exe md/distrib#ubuntu.24 sid/93e30795fbf7 md/prompt#off md/command#cloudformation.delete-stack\",\"requestParameters\":{\"stackName\":\"iam-user-group-mgmt\"},\"responseElements\":null,\"requestID\":\"78aeb11e-b114-4c26-ae1f-ec99bb0c25ca\",\"eventID\":\"7ee706c2-a98c-4d75-bd2c-d4275c102d22\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"005965605891\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"cloudformation.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "d1b5a347-bf06-4797-b2a9-e13b9253ea7e",
+            "EventName": "DeleteStack",
+            "ReadOnly": "false",
+            "AccessKeyId": "AKIAQCY4T5QB465NKCE4",
+            "EventTime": "2025-08-24T11:50:30-05:00",
+            "EventSource": "cloudformation.amazonaws.com",
+            "Username": "peter-admin",
+            "Resources": [
+                {
+                    "ResourceType": "AWS::CloudFormation::Stack",
+                    "ResourceName": "arn:aws:cloudformation:us-east-1:005965605891:stack/iam-user-group-mgmt/06729b90-8101-11f0-a115-0e2a9ae3cca5"
+                }
+            ],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.11\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDAQCY4T5QB6M7YI7QP5\",\"arn\":\"arn:aws:iam::005965605891:user/peter-admin\",\"accountId\":\"005965605891\",\"accessKeyId\":\"AKIAQCY4T5QB465NKCE4\",\"userName\":\"peter-admin\"},\"eventTime\":\"2025-08-24T16:50:30Z\",\"eventSource\":\"cloudformation.amazonaws.com\",\"eventName\":\"DeleteStack\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"47.234.174.123\",\"userAgent\":\"APN/1.0 HashiCorp/1.0 Terraform/1.6.6 (+https://www.terraform.io) terraform-provider-aws/6.10.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.38.0 ua/2.1 os/linux lang/go#1.24.6 md/GOOS#linux md/GOARCH#amd64 api/cloudformation#1.64.1 m/n\",\"requestParameters\":{\"stackName\":\"arn:aws:cloudformation:us-east-1:005965605891:stack/iam-user-group-mgmt/06729b90-8101-11f0-a115-0e2a9ae3cca5\"},\"responseElements\":null,\"requestID\":\"b3c6766f-5eaf-4555-9eab-4711695254ca\",\"eventID\":\"d1b5a347-bf06-4797-b2a9-e13b9253ea7e\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"005965605891\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"cloudformation.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "33e2b8a1-43e2-4fff-9005-d4d7b0459d99",
+            "EventName": "DeleteStack",
+            "ReadOnly": "false",
+            "AccessKeyId": "AKIAQCY4T5QB465NKCE4",
+            "EventTime": "2025-08-24T10:39:52-05:00",
+            "EventSource": "cloudformation.amazonaws.com",
+            "Username": "peter-admin",
+            "Resources": [
+                {
+                    "ResourceType": "AWS::CloudFormation::Stack",
+                    "ResourceName": "arn:aws:cloudformation:us-east-1:005965605891:stack/iam-user-group-mgmt/cc12dbe0-80fb-11f0-8fe4-0e6c37e75ba3"
+                }
+            ],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.11\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDAQCY4T5QB6M7YI7QP5\",\"arn\":\"arn:aws:iam::005965605891:user/peter-admin\",\"accountId\":\"005965605891\",\"accessKeyId\":\"AKIAQCY4T5QB465NKCE4\",\"userName\":\"peter-admin\"},\"eventTime\":\"2025-08-24T15:39:52Z\",\"eventSource\":\"cloudformation.amazonaws.com\",\"eventName\":\"DeleteStack\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"47.234.174.123\",\"userAgent\":\"APN/1.0 HashiCorp/1.0 Terraform/1.6.6 (+https://www.terraform.io) terraform-provider-aws/6.10.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.38.0 ua/2.1 os/linux lang/go#1.24.6 md/GOOS#linux md/GOARCH#amd64 api/cloudformation#1.64.1 m/n\",\"requestParameters\":{\"stackName\":\"arn:aws:cloudformation:us-east-1:005965605891:stack/iam-user-group-mgmt/cc12dbe0-80fb-11f0-8fe4-0e6c37e75ba3\"},\"responseElements\":null,\"requestID\":\"6d755809-c84e-4036-94a8-e76d7677b280\",\"eventID\":\"33e2b8a1-43e2-4fff-9005-d4d7b0459d99\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"005965605891\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"cloudformation.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "4282b73a-60b8-4fb9-890f-d1f54d293233",
+            "EventName": "DeleteStack",
+            "ReadOnly": "false",
+            "AccessKeyId": "ASIAQCY4T5QBTZYNIAG7",
+            "EventTime": "2025-08-24T04:14:46-05:00",
+            "EventSource": "cloudformation.amazonaws.com",
+            "Username": "root",
+            "Resources": [
+                {
+                    "ResourceType": "AWS::CloudFormation::Stack",
+                    "ResourceName": "arn:aws:cloudformation:us-east-1:005965605891:stack/my-first-stack/308420c0-80ca-11f0-b912-12bfde348ef9"
+                }
+            ],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.11\",\"userIdentity\":{\"type\":\"Root\",\"principalId\":\"005965605891\",\"arn\":\"arn:aws:iam::005965605891:root\",\"accountId\":\"005965605891\",\"accessKeyId\":\"ASIAQCY4T5QBTZYNIAG7\",\"sessionContext\":{\"attributes\":{\"creationDate\":\"2025-08-24T04:35:06Z\",\"mfaAuthenticated\":\"true\"}}},\"eventTime\":\"2025-08-24T09:14:46Z\",\"eventSource\":\"cloudformation.amazonaws.com\",\"eventName\":\"DeleteStack\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"47.234.174.123\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\",\"requestParameters\":{\"stackName\":\"arn:aws:cloudformation:us-east-1:005965605891:stack/my-first-stack/308420c0-80ca-11f0-b912-12bfde348ef9\"},\"responseElements\":null,\"requestID\":\"1180f198-55bf-42d0-becb-f9d997aad6d7\",\"eventID\":\"4282b73a-60b8-4fb9-890f-d1f54d293233\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"005965605891\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"cloudformation.us-east-1.amazonaws.com\"},\"sessionCredentialFromConsole\":\"true\"}"
+        },
+        {
+            "EventId": "01b15a4b-f69d-493d-a318-79d08f7311c2",
+            "EventName": "DeleteStack",
+            "ReadOnly": "false",
+            "AccessKeyId": "AKIAQCY4T5QBWCQ6NI5H",
+            "EventTime": "2025-08-22T15:19:59-05:00",
+            "EventSource": "cloudformation.amazonaws.com",
+            "Username": "peter-admin",
+            "Resources": [
+                {
+                    "ResourceType": "AWS::CloudFormation::Stack",
+                    "ResourceName": "arn:aws:cloudformation:us-east-1:005965605891:stack/test-s3-001test-stack/e65cb200-7f93-11f0-927b-1200fdfaacef"
+                }
+            ],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.11\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDAQCY4T5QB6M7YI7QP5\",\"arn\":\"arn:aws:iam::005965605891:user/peter-admin\",\"accountId\":\"005965605891\",\"accessKeyId\":\"AKIAQCY4T5QBWCQ6NI5H\",\"userName\":\"peter-admin\"},\"eventTime\":\"2025-08-22T20:19:59Z\",\"eventSource\":\"cloudformation.amazonaws.com\",\"eventName\":\"DeleteStack\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"47.234.174.123\",\"userAgent\":\"APN/1.0 HashiCorp/1.0 Terraform/1.12.2 (+https://www.terraform.io) terraform-provider-aws/5.100.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.36.3 ua/2.1 os/linux lang/go#1.23.10 md/GOOS#linux md/GOARCH#amd64 api/cloudformation#1.60.1 m/n\",\"requestParameters\":{\"stackName\":\"arn:aws:cloudformation:us-east-1:005965605891:stack/test-s3-001test-stack/e65cb200-7f93-11f0-927b-1200fdfaacef\"},\"responseElements\":null,\"requestID\":\"b27c08e7-0783-4cf9-96fd-5bd41a51de48\",\"eventID\":\"01b15a4b-f69d-493d-a318-79d08f7311c2\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"005965605891\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"cloudformation.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "f2fbb858-7f34-43e6-969a-8a47bf028606",
+            "EventName": "DeleteStack",
+            "ReadOnly": "false",
+            "AccessKeyId": "AKIAQCY4T5QBWCQ6NI5H",
+            "EventTime": "2025-08-22T15:09:14-05:00",
+            "EventSource": "cloudformation.amazonaws.com",
+            "Username": "peter-admin",
+            "Resources": [
+                {
+                    "ResourceType": "AWS::CloudFormation::Stack",
+                    "ResourceName": "arn:aws:cloudformation:us-east-1:005965605891:stack/test-s3-001test-stack/67341f60-7f91-11f0-90bb-0e19af0fd6c1"
+                }
+            ],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.11\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDAQCY4T5QB6M7YI7QP5\",\"arn\":\"arn:aws:iam::005965605891:user/peter-admin\",\"accountId\":\"005965605891\",\"accessKeyId\":\"AKIAQCY4T5QBWCQ6NI5H\",\"userName\":\"peter-admin\"},\"eventTime\":\"2025-08-22T20:09:14Z\",\"eventSource\":\"cloudformation.amazonaws.com\",\"eventName\":\"DeleteStack\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"47.234.174.123\",\"userAgent\":\"APN/1.0 HashiCorp/1.0 Terraform/1.12.2 (+https://www.terraform.io) terraform-provider-aws/5.100.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.36.3 ua/2.1 os/linux lang/go#1.23.10 md/GOOS#linux md/GOARCH#amd64 api/cloudformation#1.60.1 m/n\",\"requestParameters\":{\"stackName\":\"arn:aws:cloudformation:us-east-1:005965605891:stack/test-s3-001test-stack/67341f60-7f91-11f0-90bb-0e19af0fd6c1\"},\"responseElements\":null,\"requestID\":\"acefdce2-2c4c-4f38-9a95-13887b918eea\",\"eventID\":\"f2fbb858-7f34-43e6-969a-8a47bf028606\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"005965605891\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"cloudformation.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "0449d1c1-0b28-4e74-8a79-277c651f1139",
+            "EventName": "DeleteStack",
+            "ReadOnly": "false",
+            "AccessKeyId": "ASIAQCY4T5QBXYBGWMAM",
+            "EventTime": "2025-08-17T09:44:49-05:00",
+            "EventSource": "cloudformation.amazonaws.com",
+            "Username": "root",
+            "Resources": [
+                {
+                    "ResourceType": "AWS::CloudFormation::Stack",
+                    "ResourceName": "arn:aws:cloudformation:us-east-1:005965605891:stack/prod-user-grp-setup/7f75cef0-7561-11f0-8c3a-0affc9a8a8a7"
+                }
+            ],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.11\",\"userIdentity\":{\"type\":\"Root\",\"principalId\":\"005965605891\",\"arn\":\"arn:aws:iam::005965605891:root\",\"accountId\":\"005965605891\",\"accessKeyId\":\"ASIAQCY4T5QBXYBGWMAM\",\"sessionContext\":{\"attributes\":{\"creationDate\":\"2025-08-17T14:02:26Z\",\"mfaAuthenticated\":\"true\"}}},\"eventTime\":\"2025-08-17T14:44:49Z\",\"eventSource\":\"cloudformation.amazonaws.com\",\"eventName\":\"DeleteStack\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"47.234.174.123\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\",\"requestParameters\":{\"stackName\":\"arn:aws:cloudformation:us-east-1:005965605891:stack/prod-user-grp-setup/7f75cef0-7561-11f0-8c3a-0affc9a8a8a7\"},\"responseElements\":null,\"requestID\":\"04efd057-db40-4007-9318-ec33a577d5ee\",\"eventID\":\"0449d1c1-0b28-4e74-8a79-277c651f1139\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"005965605891\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"cloudformation.us-east-1.amazonaws.com\"},\"sessionCredentialFromConsole\":\"true\"}"
+        },
+        {
+            "EventId": "ddafc45b-35d1-4711-acf3-c61ca843a0ab",
+            "EventName": "DeleteStack",
+            "ReadOnly": "false",
+            "AccessKeyId": "ASIAQCY4T5QB7YH5HMHX",
+            "EventTime": "2025-08-10T12:04:34-05:00",
+            "EventSource": "cloudformation.amazonaws.com",
+            "Username": "root",
+            "Resources": [
+                {
+                    "ResourceType": "AWS::CloudFormation::Stack",
+                    "ResourceName": "arn:aws:cloudformation:us-east-1:005965605891:stack/User-Group-Setup/f876f3a0-753f-11f0-928b-0afff546b509"
+                }
+            ],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.11\",\"userIdentity\":{\"type\":\"Root\",\"principalId\":\"005965605891\",\"arn\":\"arn:aws:iam::005965605891:root\",\"accountId\":\"005965605891\",\"accessKeyId\":\"ASIAQCY4T5QB7YH5HMHX\",\"sessionContext\":{\"attributes\":{\"creationDate\":\"2025-08-10T16:55:53Z\",\"mfaAuthenticated\":\"true\"}}},\"eventTime\":\"2025-08-10T17:04:34Z\",\"eventSource\":\"cloudformation.amazonaws.com\",\"eventName\":\"DeleteStack\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"47.234.174.123\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\",\"requestParameters\":{\"stackName\":\"arn:aws:cloudformation:us-east-1:005965605891:stack/User-Group-Setup/f876f3a0-753f-11f0-928b-0afff546b509\"},\"responseElements\":null,\"requestID\":\"a1a141d4-fb64-4254-bfd8-27e2b702326b\",\"eventID\":\"ddafc45b-35d1-4711-acf3-c61ca843a0ab\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"005965605891\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"cloudformation.us-east-1.amazonaws.com\"},\"sessionCredentialFromConsole\":\"true\"}"
+        },
+        {
+            "EventId": "309b3fc0-e699-4f34-8073-64890406e69a",
+            "EventName": "DeleteStack",
+            "ReadOnly": "false",
+            "AccessKeyId": "ASIAQCY4T5QB7YH5HMHX",
+            "EventTime": "2025-08-10T12:04:27-05:00",
+            "EventSource": "cloudformation.amazonaws.com",
+            "Username": "root",
+            "Resources": [
+                {
+                    "ResourceType": "AWS::CloudFormation::Stack",
+                    "ResourceName": "arn:aws:cloudformation:us-east-1:005965605891:stack/User-Group-Setup/f876f3a0-753f-11f0-928b-0afff546b509"
+                }
+            ],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.11\",\"userIdentity\":{\"type\":\"Root\",\"principalId\":\"005965605891\",\"arn\":\"arn:aws:iam::005965605891:root\",\"accountId\":\"005965605891\",\"accessKeyId\":\"ASIAQCY4T5QB7YH5HMHX\",\"sessionContext\":{\"attributes\":{\"creationDate\":\"2025-08-10T16:55:53Z\",\"mfaAuthenticated\":\"true\"}}},\"eventTime\":\"2025-08-10T17:04:27Z\",\"eventSource\":\"cloudformation.amazonaws.com\",\"eventName\":\"DeleteStack\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"47.234.174.123\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\",\"requestParameters\":{\"stackName\":\"arn:aws:cloudformation:us-east-1:005965605891:stack/User-Group-Setup/f876f3a0-753f-11f0-928b-0afff546b509\"},\"responseElements\":null,\"requestID\":\"6b1c7453-3817-4859-a6f9-7c2b039c0341\",\"eventID\":\"309b3fc0-e699-4f34-8073-64890406e69a\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"005965605891\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"cloudformation.us-east-1.amazonaws.com\"},\"sessionCredentialFromConsole\":\"true\"}"
+        },
+        {
+            "EventId": "77593728-a892-4e77-ba62-359da6deb6f4",
+            "EventName": "DeleteStack",
+            "ReadOnly": "false",
+            "AccessKeyId": "ASIAQCY4T5QB3T7WZX3O",
+            "EventTime": "2025-08-09T15:27:15-05:00",
+            "EventSource": "cloudformation.amazonaws.com",
+            "Username": "root",
+            "Resources": [
+                {
+                    "ResourceType": "AWS::CloudFormation::Stack",
+                    "ResourceName": "arn:aws:cloudformation:us-east-1:005965605891:stack/name-stack/6f5aab30-754d-11f0-8740-0affdaf9f2c5"
+                }
+            ],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.11\",\"userIdentity\":{\"type\":\"Root\",\"principalId\":\"005965605891\",\"arn\":\"arn:aws:iam::005965605891:root\",\"accountId\":\"005965605891\",\"accessKeyId\":\"ASIAQCY4T5QB3T7WZX3O\",\"sessionContext\":{\"attributes\":{\"creationDate\":\"2025-08-09T15:53:22Z\",\"mfaAuthenticated\":\"true\"}}},\"eventTime\":\"2025-08-09T20:27:15Z\",\"eventSource\":\"cloudformation.amazonaws.com\",\"eventName\":\"DeleteStack\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"47.234.174.123\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\",\"requestParameters\":{\"stackName\":\"arn:aws:cloudformation:us-east-1:005965605891:stack/name-stack/6f5aab30-754d-11f0-8740-0affdaf9f2c5\"},\"responseElements\":null,\"requestID\":\"2ae760ec-f610-4356-959a-58629cc96775\",\"eventID\":\"77593728-a892-4e77-ba62-359da6deb6f4\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"005965605891\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"cloudformation.us-east-1.amazonaws.com\"},\"sessionCredentialFromConsole\":\"true\"}"
+        },
+        {
+            "EventId": "d8d9bea5-b435-4ec6-a360-3cfdd86263e3",
+            "EventName": "DeleteStack",
+            "ReadOnly": "false",
+            "AccessKeyId": "ASIAQCY4T5QB3T7WZX3O",
+            "EventTime": "2025-08-09T15:27:07-05:00",
+            "EventSource": "cloudformation.amazonaws.com",
+            "Username": "root",
+            "Resources": [
+                {
+                    "ResourceType": "AWS::CloudFormation::Stack",
+                    "ResourceName": "arn:aws:cloudformation:us-east-1:005965605891:stack/name-stack/6f5aab30-754d-11f0-8740-0affdaf9f2c5"
+                }
+            ],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.11\",\"userIdentity\":{\"type\":\"Root\",\"principalId\":\"005965605891\",\"arn\":\"arn:aws:iam::005965605891:root\",\"accountId\":\"005965605891\",\"accessKeyId\":\"ASIAQCY4T5QB3T7WZX3O\",\"sessionContext\":{\"attributes\":{\"creationDate\":\"2025-08-09T15:53:22Z\",\"mfaAuthenticated\":\"true\"}}},\"eventTime\":\"2025-08-09T20:27:07Z\",\"eventSource\":\"cloudformation.amazonaws.com\",\"eventName\":\"DeleteStack\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"47.234.174.123\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\",\"requestParameters\":{\"stackName\":\"arn:aws:cloudformation:us-east-1:005965605891:stack/name-stack/6f5aab30-754d-11f0-8740-0affdaf9f2c5\"},\"responseElements\":null,\"requestID\":\"a277697d-edf4-4579-af92-9c870096dce5\",\"eventID\":\"d8d9bea5-b435-4ec6-a360-3cfdd86263e3\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"005965605891\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"cloudformation.us-east-1.amazonaws.com\"},\"sessionCredentialFromConsole\":\"true\"}"
+        },
+        {
+            "EventId": "33b84ef0-17d6-43c9-95a9-1c8b57a62d38",
+            "EventName": "DeleteStack",
+            "ReadOnly": "false",
+            "AccessKeyId": "ASIAQCY4T5QBTP3OBHLA",
+            "EventTime": "2025-08-09T11:38:17-05:00",
+            "EventSource": "cloudformation.amazonaws.com",
+            "Username": "root",
+            "Resources": [
+                {
+                    "ResourceType": "AWS::CloudFormation::Stack",
+                    "ResourceName": "arn:aws:cloudformation:us-east-1:005965605891:stack/user-setup/6e1509a0-753e-11f0-9b46-0ee4edc8c2cf"
+                }
+            ],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.11\",\"userIdentity\":{\"type\":\"Root\",\"principalId\":\"005965605891\",\"arn\":\"arn:aws:iam::005965605891:root\",\"accountId\":\"005965605891\",\"accessKeyId\":\"ASIAQCY4T5QBTP3OBHLA\",\"sessionContext\":{\"attributes\":{\"creationDate\":\"2025-08-09T15:53:22Z\",\"mfaAuthenticated\":\"true\"}}},\"eventTime\":\"2025-08-09T16:38:17Z\",\"eventSource\":\"cloudformation.amazonaws.com\",\"eventName\":\"DeleteStack\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"47.234.174.123\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\",\"requestParameters\":{\"stackName\":\"arn:aws:cloudformation:us-east-1:005965605891:stack/user-setup/6e1509a0-753e-11f0-9b46-0ee4edc8c2cf\"},\"responseElements\":null,\"requestID\":\"dead712a-1598-48ca-9e48-57c55c7adf14\",\"eventID\":\"33b84ef0-17d6-43c9-95a9-1c8b57a62d38\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"005965605891\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"cloudformation.us-east-1.amazonaws.com\"},\"sessionCredentialFromConsole\":\"true\"}"
+        }
+    ]
+}
