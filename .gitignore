@@ -1,0 +1,28 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.tfvars
+.terraform.lock.hcl
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs and env
+*.log
+.env
+
+# local binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# npm
+node_modules/
+
