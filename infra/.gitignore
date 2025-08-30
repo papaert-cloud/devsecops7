@@ -1,0 +1,17 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform.lock.hcl
+
+# IDEs
+.vscode/
+.idea/
+
+# local quick ref
+...QUICK_REF/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -10,7 +10,7 @@ variable "profile" {
 }
 
 variable "stack_set_name" {
-  type        = string
+  type = string
 }
 
 
@@ -30,7 +30,7 @@ variable "tags" {
 }
 
 variable "permission_model" {
-  type    = string
+  type = string
 }
 
 variable "call_as" {

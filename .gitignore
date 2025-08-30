@@ -1,17 +1,30 @@
-# Terraform
+# Terraform & Terragrunt
 .terraform/
 *.tfstate
-*.tfstate.*
-*.tfvars
+*.tfstate.backup
+override.tf
+override.tf.json
+*_override.tf
 .terraform.lock.hcl
+.terraform.d/
+.terragrunt-cache/
 
-# IDEs
+# Secrets / creds
+*.pem
+*.key
+*.crt
+credentials
+.env
+
+# OS / editors
+.DS_Store
+*.swp
 .vscode/
 .idea/
 
-# local quick ref
-...QUICK_REF/
+# Ignore backup and binary files
+*.bak
+*.log
 
-# OS
-.DS_Store
-Thumbs.db
+# Optional: keep modules and terragrunt config
+# (we want these tracked)
