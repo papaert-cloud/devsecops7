@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Resolve repo root and Windows home each run
+SRC="$(git rev-parse --show-toplevel)"
+WIN_HOME="$(wslpath -u "$(cmd.exe /c echo %USERPROFILE% 2>nul | tr -d '\r')")"
+
+# UPDATED default OneDrive location
+export ODRV="${ODRV:-${WIN_HOME}/OneDrive/Desktop/Papaert-Cloud-RepoLocal}"
+export DEST="${DEST:-${ODRV}/devsecops7}"
+export EXCLUDES="${EXCLUDES:-${SRC}/.syncignore}"
+export DRY_RUN="${DRY_RUN:-false}"
+
+bash "${SRC}/scripts/sync-folders.sh" || {
+  echo "[post-commit] sync failed; commit kept." >&2
+}
