@@ -28,3 +28,29 @@ credentials
 
 # Optional: keep modules and terragrunt config
 # (we want these tracked)
+
+# diagnosis artifacts
+.diagnosis/
+# --- Terraform build artifacts / caches ---
+.terraform/
+.terraform.*      # workdirs or plugin caches
+crash.log
+*.tfstate
+*.tfstate.*
+terraform.tfvars         # if sensitive; consider using tfvars.example instead
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# --- Plan outputs ---
+*.plan
+*.tfplan
+tfplan.bin
+tfplan.json
+
+# --- Local tooling caches ---
+*.log
+.DS_Store
+Thumbs.db
