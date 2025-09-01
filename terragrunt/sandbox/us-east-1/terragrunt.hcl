@@ -3,6 +3,6 @@ terraform {
 }
 
 inputs = {
-  env        = "prod"
+  env        = "sandbox"
   aws_region = "us-east-1"
 }

@@ -20,6 +20,8 @@ credentials
 .DS_Store
 *.swp
 .vscode/
+.infracost/config.yaml
+
 .idea/
 
 # Ignore backup and binary files
