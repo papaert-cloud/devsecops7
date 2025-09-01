@@ -1,0 +1,13 @@
+# Usage estimates for local Infracost tests
+resources:
+  # provide monthly hours for EC2 t3.micro
+  - resource: aws_instance.example
+    usage:
+      monthly_instance_hours: 730
+
+  # provide some S3 storage and requests to make S3 costs non-zero
+  - resource: aws_s3_bucket.example
+    usage:
+      storage_gb: 10
+      put_requests: 1000
+      get_requests: 1000

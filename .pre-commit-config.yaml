@@ -1,11 +1,46 @@
 repos:
-- repo: https://github.com/antonbabenko/pre-commit-terraform
-  rev: v1.73.0
-  hooks:
-    - id: terraform_fmt
-    - id: terraform_validate
-    - id: tflint
-- repo: https://github.com/awslabs/git-secrets
-  rev: v1.3.1
-  hooks:
-    - id: git-secrets
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-added-large-files
+        args: ["--maxkb=100"]
+      - id: check-merge-conflict
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: local
+    hooks:
+      - id: block-terraform-artifacts
+        name: block terraform artifacts
+        entry: bash -c 'if git diff --cached --name-only | grep -E "(^|/)\\.terraform(/|$)|(^|/).*\\.(tfstate(\\..*)?)$|(^|/).*\\.(tfplan)$|(^|/)tfplan\.(bin|json)$|(^|/)\\.terraform\\.lock\\.hcl$"; then echo "ERROR: Terraform artifacts/state/plan detected in index"; exit 1; fi'
+        language: system
+        pass_filenames: false
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-added-large-files
+        args: ["--maxkb=100"]
+      - id: check-merge-conflict
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    # Use a current stable tag; you can update later with: pre-commit autoupdate
+    rev: v1.90.0
+    hooks:
+      - id: terraform_fmt
+      - id: terraform_validate
+      - id: terraform_tflint
+        # Optional: pass TFLint args via --args
+        # args: ["--args=--config=./.tflint.hcl"]
+
+  - repo: local
+    hooks:
+      - id: block-terraform-artifacts
+        name: block terraform artifacts
+        entry: bash -c 'if git diff --cached --name-only | grep -E "(^|/)\.terraform(/|$)|(^|/).*\.(tfstate(\..*)?)$|(^|/).*\.(tfplan)$|(^|/)tfplan\.(bin|json)$|(^|/)\.terraform\.lock\.hcl$"; then echo "ERROR: Terraform artifacts/state/plan detected in index"; exit 1; fi'
+        language: system
+        pass_filenames: false
+
+#  cmd: pre-commit run --all-files

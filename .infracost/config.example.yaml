@@ -1,0 +1,4 @@
+version: "0.1"
+# DO NOT store secrets in repo. Use environment variables or CI secrets.
+# Example config (leave api_key empty or remove field and rely on env var INFRACOST_API_KEY)
+pricing_api_endpoint: https://pricing.api.infracost.io

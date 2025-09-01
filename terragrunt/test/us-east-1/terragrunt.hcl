@@ -1,7 +1,9 @@
-include {
-  path = find_in_parent_folders()
+terraform {
+  # Template: point to your stacks module or specific module
+  source = "${get_repo_root()}/modules/stacks"
 }
 
-locals {
-  region = "us-east-1"
+inputs = {
+  env        = "test"
+  aws_region = "us-east-1"
 }

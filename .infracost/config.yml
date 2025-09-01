@@ -1,0 +1,6 @@
+# Minimal Infracost config for this repo
+version: 0
+projects:
+  # Default project settings; individual projects will be auto-detected by the script.
+  - name: default
+    path: .
