@@ -27,7 +27,7 @@ remote_state {
 
 # Inject provider & required_providers into each child
 generate "provider" {
-	path      = "provider.auto.tf"
+	path      = "terragrunt_generated_provider.tf"
 	if_exists = "overwrite_terragrunt"
 	contents  = <<-EOF
 		terraform {

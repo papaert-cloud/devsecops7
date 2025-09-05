@@ -2,8 +2,8 @@ variable "template_path" {
   type        = string
   description = "Absolute path to the CFN template file"
   validation {
-    condition     = fileexists(var.template_path)
-    error_message = "template_path does not point to a readable file."
+  condition     = can(file(var.template_path))
+  error_message = "template_path does not point to a readable file accessible during plan."
   }
 }
 
@@ -26,7 +26,7 @@ variable "call_as" {
 variable "capabilities" {
   type        = list(string)
   description = "Capabilities for the CloudFormation template"
-  default     = []
+  default     = ["CAPABILITY_IAM", "CAPABILITY_NAMED_IAM"]
 }
 
 variable "parameters" {
@@ -44,7 +44,7 @@ variable "tags" {
 variable "auto_deployment_enabled" {
   type        = bool
   description = "Enable automatic deployment to accounts in OUs when SERVICE_MANAGED"
-  default     = false
+  default     = true
 }
 
 variable "retain_stacks_on_account_removal" {
@@ -56,7 +56,7 @@ variable "retain_stacks_on_account_removal" {
 variable "ou_ids" {
   type        = list(string)
   description = "List of OU ids for SERVICE_MANAGED deployment targets"
-  default     = []
+  default     = ["ou-im88-1fmr1yt9"]
 }
 
 variable "stack_set_instance_region" {
@@ -68,13 +68,13 @@ variable "stack_set_instance_region" {
 variable "failure_tolerance_percentage" {
   type        = number
   description = "Failure tolerance percentage for operation preferences"
-  default     = 0
+  default     = 100
 }
 
 variable "max_concurrent_percentage" {
   type        = number
   description = "Max concurrent percentage for operation preferences"
-  default     = 100
+  default     = 75
 }
 
 variable "region_concurrency_type" {
@@ -86,19 +86,19 @@ variable "region_concurrency_type" {
 variable "timeout_create" {
   type        = string
   description = "Create timeout for stack set instance"
-  default     = "30m"
+  default     = "45m"
 }
 
 variable "timeout_update" {
   type        = string
   description = "Update timeout for stack set instance"
-  default     = "30m"
+  default     = "45m"
 }
 
 variable "timeout_delete" {
   type        = string
   description = "Delete timeout for stack set instance"
-  default     = "30m"
+  default     = "45m"
 }
 
 variable "account_ids" {

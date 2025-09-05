@@ -24,14 +24,14 @@ Resources:
   MyFirstGroup:
     Type: AWS::IAM::Group
     Properties:
-      GroupName: !Ref GroupName
+      GroupName: !Sub "${GroupName}-${AWS::AccountId}"
       ManagedPolicyArns:
-        - !Ref ManagedPolicyArn     # <-- use the parameter
+        - !Ref ManagedPolicyArn   
 
   MyFirstIAMUser:
     Type: AWS::IAM::User
     Properties:
-      UserName: !Ref UserName
+      UserName: !Sub "${UserName}-${AWS::AccountId}"
       Groups:
         - !Ref MyFirstGroup
       Tags:

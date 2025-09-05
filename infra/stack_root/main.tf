@@ -9,7 +9,7 @@ variable "timeout_update" { type = string }
 variable "timeout_delete" { type = string }
 
 module "stack" {
-  source = "../modules/stacks"
+  source = "./modules/stacks"
 
   stack_name    = var.stack_name
   region        = var.region
