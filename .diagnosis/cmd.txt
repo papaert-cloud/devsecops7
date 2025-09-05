@@ -1,0 +1,45 @@
+>>>>>>>>>> REPORT COMMANDS <<<<<<<<<<
+
+1.) Whole repo, fastest (validate-only):
+
+bash .diagnosis/collect_diag.sh --s0
+
+
+2.) Whole repo, include provider scan (no plan), JSON summary for CI:
+
+bash .diagnosis/collect_diag.sh --no-plan --json
+
+
+3.) Limit scan size (big repos):
+
+bash .diagnosis/collect_diag.sh --no-plan --max-dirs 25 --json
+
+
+4.) Sub-tree only (e.g., modules):
+
+bash .diagnosis/collect_diag.sh --target infra/modules --no-plan --json
+
+
+>>>>>>>>>> OUTPUT PROMPTS <<<<<<<<<<
+
+Run one script from a .diagnosis/ folder at your repo root.
+
+Scan the entire repo (by default), excluding noise (docs, images, states, build artifacts, etc.).
+
+Write all outputs (report + optional bundle) into .diagnosis/.
+
+Produce a copy-pasteable report that shows:
+
+repo architecture (trimmed to execution-relevant files),
+
+environment/tooling context,
+
+misconfigurations & syntax errors,
+
+paths/modules that look out of sync,
+
+candidates for cleanup,
+
+spots to restructure/optimize,
+
+and (optionally) a JSON summary for CI.
